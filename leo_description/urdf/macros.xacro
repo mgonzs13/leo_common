@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find leo_description)/urdf/sensors/all_sensors.urdf.xacro" />
 
   <xacro:macro name="leo" 
                params="default_antenna:=true
@@ -421,9 +422,13 @@
       <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
         <robot_param>robot_description</robot_param>
         <robot_param_node>robot_state_publisher</robot_param_node>
-        <parameters>package://leo_description/config/controllers.yaml</parameters>
+        <parameters>$(find leo_description)/config/controllers.yaml</parameters>
       </plugin>
     </gazebo>
+
+    <xacro:sensor_hokuyo prefix="${link_prefix}front_laser" parent="${link_prefix}base_link">
+        <origin xyz="0.105 0.0 0.05" rpy="0 0 0"/>
+    </xacro:sensor_hokuyo>
 
   </xacro:macro>
 
