@@ -424,6 +424,10 @@
 
     <gazebo>
       <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+        <ros>
+          <remapping>~/odom:=wheel_odom_with_covariance</remapping>
+          <remapping>~/cmd_vel_unstamped:=cmd_vel</remapping>
+        </ros>
         <robot_param>robot_description</robot_param>
         <robot_param_node>robot_state_publisher</robot_param_node>
         <parameters>$(find leo_description)/config/controllers.yaml</parameters>
