@@ -110,7 +110,8 @@ def generate_launch_description():
         executable="odom_to_tf",
         name="odom_to_tf",
         parameters=[{
-            "odom_topic": "/wheel_odom_with_covariance",
+            "use_sim_time": use_sim_time,
+            "odom_topic": "wheel_odom_with_covariance",
             "child_frame_id": "base_footprint"
         }],
     )
