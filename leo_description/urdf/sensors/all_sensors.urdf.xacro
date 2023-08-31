@@ -20,7 +20,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>. -->
   <!-- Imu -->
   
   <!-- Hokuyo -->
-  <xacro:include filename="$(find rb1_description)/urdf/sensors/hokuyo.urdf.xacro" /> 
+  <xacro:include filename="$(find leo_description)/urdf/sensors/hokuyo.urdf.xacro" /> 
 
   <!-- Camera -->
   
