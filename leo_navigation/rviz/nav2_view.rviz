@@ -5,7 +5,6 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /TF1/Tree1
-        - /LaserScan1/Topic1
         - /Global Planner1/Path1
         - /Controller1/Local Plan1
         - /Controller1/Local Plan1/Offset1
@@ -210,14 +209,14 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 10
-        Min Value: -10
+        Max Value: 0.24783000349998474
+        Min Value: 0.24783000349998474
         Value: true
       Axis: Z
       Channel Name: intensity
       Class: rviz_default_plugins/LaserScan
       Color: 255; 255; 255
-      Color Transformer: Intensity
+      Color Transformer: AxisColor
       Decay Time: 0
       Enabled: true
       Invert Rainbow: false
@@ -562,10 +561,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.8748122453689575
+      Pitch: 1.1048120260238647
       Target Frame: <Fixed Frame>
       Value: XYOrbit (rviz_default_plugins)
-      Yaw: 3.1035802364349365
+      Yaw: 1.1835777759552002
     Saved: ~
 Window Geometry:
   Displays:
